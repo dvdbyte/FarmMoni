@@ -35,7 +35,7 @@ exports.depositFunds = async (req, res) => {
         email: user.email,
         amount: amount * 100, 
         currency: 'NGN',
-        callback_url: 'https://farmmoni-f4hk.onrender.com/payment-success', 
+        callback_url: 'https://farmmonie.onrender.com/payment-success', 
         metadata: {
            userId: user._id, 
            custom_fields: [{ display_name: "Phone", variable_name: "phone", value: user.phone }]

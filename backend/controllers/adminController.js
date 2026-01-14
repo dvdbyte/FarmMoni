@@ -67,9 +67,7 @@ exports.getAllUsers = async (req, res) => {
   }
 };
 
-// @desc    Get all investments (Global)
-// @route   GET /api/admin/investments
-// @access  Admin
+// Get all investments 
 exports.getAllInvestments = async (req, res) => {
   try {
     const investments = await Investment.find({})
